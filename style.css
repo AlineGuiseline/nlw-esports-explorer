@@ -10,7 +10,7 @@ ul {
 body {
     background-image: url(./assets/bg.jpg);
     background-position: top center;
-    background-size: 100% auto /* 100% refere-se à largura e auto à altura */;
+    background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: #121214;
 }
@@ -28,12 +28,12 @@ header {
 header div {
     width: 120px;
     margin: auto;
-    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
     border-radius: 50%;
     display: flex;
 }
 
-header div:hover { /*Quando você usa o hover na div, assim que você passa o mouse sobre a ela, ele aplica as propriedades dentro das chaves*/
+header div:hover {
     transform: scale(1.1)
 }
 
@@ -56,7 +56,7 @@ main {
 
 section {
     color: white;
-    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
     padding-top: 4px;
     border-radius: 10px;
 }
@@ -78,7 +78,7 @@ section p {
 }
 section ul {
     display: flex;
-    flex-wrap: wrap /*obriga os elementos a se ajustarem um em cima do outro caso o espaço da caixa acabe*/; 
+    flex-wrap: wrap; 
     gap: 16px;
     margin-top: 24px;
 }
@@ -136,7 +136,7 @@ main section:nth-child(3) {
     }
 }
 
-@keyframes fromBottom { /*@keyframes permite dar um nome para animação, que pode ser o que você preferir. A animação precisa ter, pelo menos, duas propriedades, que são o nome e o tempo, e pode ter uma terceira, que é o delay (mas se for um delay, é importante que você puxe algumas propriedades antes com o backwards)*/
+@keyframes fromBottom { 
     from {
         opacity: 0;
         transform: translateX(-30px)
